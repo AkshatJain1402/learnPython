@@ -9,3 +9,17 @@ capitalized_words = []
 for word in words:
     capitalized_word = word[0].upper() + word[1:]
     capitalized_words.append(capitalized_word)
+
+
+##using if 
+
+Original="Mississippi"
+# Without duplicates: MISP
+output=[]
+for i in Original:
+    if not output.count(i)>0 :
+        
+        output.append(i)
+#short way
+output = []
+[output.append(i) for i in Original if i not in output]
